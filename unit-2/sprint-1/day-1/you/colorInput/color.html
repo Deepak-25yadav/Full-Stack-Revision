@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Colorful Notes App</title>
+    <style>
+      .note {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+      }
+      #notesContainer {
+        width: 500px;
+        height: 500px;
+        /* background-color: aqua; */
+      }
+      #navbar{
+        width: 500px;
+        height: 100px;
+        /* background-color: aqua; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Colorful Notes App</h1>
+
+    <label for="noteColor">Choose Background color:</label>
+    <input type="color" id="noteColor" name="noteColor" /><br>
+    <label for="textColor">Choose Text color</label>
+    <input type="color" name="textColor" id="textColorInput" /><br><br>
+    <label for="navbar">Change Nabar background-color</label>
+    <input type="color" name="navbarColor" id="navbarColor"><br><br>
+    <button id="createNote">Create Note with Background Color</button>
+    <br /><br />
+    
+
+    <div id="notesContainer">
+        <div id="navbar">
+            <h3>Navbar</h3>
+        </div>
+        <h1>Change text color with color picker</h1>
+      <p>
+       corporis. Voluptate, omnis soluta obcaecati accusantium consectetur nulla! Nam ea maiores unde corrupti praesentium totam eligendi fugit a dolores optio, deserunt facilis architecto nisi alias ipsa, eveniet ipsam reprehenderit.
+      Voluptatum, consequuntur! Magni, iure quia voluptas veritatis corrupti laborum architecto, eum ipsa non animi ducimus ab quaerat itaque et est, minima nobis obcaecati repellendus quidem ut molestias accusantium eaque. Suscipit?
+      </p>
+      
+      <p>okk as you wish</p>
+    </div>
+
+    <script>
+      const noteColorInput = document.getElementById("noteColor");
+      const createNoteButton = document.getElementById("createNote");
+      const notesContainer = document.getElementById("notesContainer");
+      const textColorInput =document.getElementById("textColorInput");
+      const navbarColor=document.getElementById("navbarColor");
+      const navbar=document.getElementById("navbar");
+
+      createNoteButton.addEventListener("click", () => {
+        const backGround_color = noteColorInput.value;
+        const textColor= textColorInput.value;
+        const navColor=navbarColor.value;
+        const note = createNoteElement(backGround_color,textColor,navColor);
+        notesContainer.appendChild(note);
+      });
+
+      function createNoteElement(bgcolor,textcolor,navColor) {
+        // const note = document.createElement('div');
+        // note.className = 'note';
+        // note.style.backgroundColor = color;
+        // note.textContent = 'This is a colorful note!';
+        notesContainer.style.backgroundColor = bgcolor;
+        notesContainer.style.color=textcolor
+        navbar.style.backgroundColor=navColor
+        // const h1=document.createElement('h1')
+        // h1.style.backgroundColor="white"
+        // h1.style.color=color
+        // h1.textContent="I am an Indian "
+        // note.appendChild(h1)
+       
+        // return notesContainer;
+      }
+    </script>
+  </body>
+</html>
