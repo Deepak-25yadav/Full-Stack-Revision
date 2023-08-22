@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai Layout</title>
+    <style>
+    body{
+        background-color: black;
+        font-size: 20px;
+        font-weight: 200;
+    }
+     #container{
+        /* border: 5px solid yellow; */
+        width: 40%;
+        background-color: white;
+        margin: auto;
+        height: 100%;
+        
+     }
+     #img-div{
+        /* border: 2px solid green; */
+        width: 80%;
+        height: 50%;
+     }
+     #img-div>img{
+        width:100% ;
+        height: 100%;
+       padding: 10px;
+     }
+     #logo-div{
+        /* border: 4px solid rgb(216, 11, 11); */
+        padding: 5px;
+        
+     }
+     #logo-div>img{
+        width: 28%;
+        height: 100%;
+     }
+     #paragraph{
+        /* border: 2px solid aqua; */
+        line-height:2px;
+        padding: 10px;
+        word-spacing: 2px;
+     }
+     #program-para{
+        font-weight: bold;
+        font-size: larger;
+     }
+     #input-container{
+       display: flex;
+       /* justify-content: center; */
+       
+     }
+
+
+     #list-div{
+        /* line-height: 2px; */
+        /* border: 2px solid rgb(236, 22, 58); */
+        padding-bottom: 80px;
+     }
+    
+    
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="logo-div">
+        <img  src="https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/masai_logo.svg" alt="Logo not found" />
+      </div>
+      <div id="img-div">
+        <img  src="https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/masai_banner.jpg" alt="Developer image not found" />
+      </div>
+      <div>
+        <p id="summary-line">
+          We will be learning the following things this week
+        </p>
+       <div id="paragraph">
+        <h4>
+            <span>Day 1</span>
+            <span>Day 2</span>
+            <span>Day 3</span>
+            <span>Day 4</span>
+          </h4>
+          <p>
+            <span>Linux 1</span>
+            <span>HTML </span>
+            <span>Linux 2</span>
+            <span>Linux 3</span>
+          </p>
+          <p>
+              <span>GIT 1</span>
+              <span>CSS</span>
+              <span>Git 2</span>
+              <span>Bootstrap</span>
+          </p>
+       </div>
+        <p>If you want to contact me, please fill me this form:</p>
+      </div>
+      
+       <div id="input-container">
+        <span>Name</span>     <input type="text"><br>
+        <span>Phone no:</span>  <input type="tel" name="" id=""><br>
+        <span>email id:</span>   <input type="text" name="" id=""><br>
+       </div>
+      
+      <div id="list-div">
+       <p id="program-para">The following things are important to be a programmer</p>
+        <ul type="spherical">
+            <li>A Problem solving mindset</li>
+            <li>Consistency</li>
+            <ul>
+                <li>Clean code</li>
+                <li>Thorough knowledge of core concepts</li>
+                <li>Readable code</li>
+            </ul>
+            <li>Speed</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
