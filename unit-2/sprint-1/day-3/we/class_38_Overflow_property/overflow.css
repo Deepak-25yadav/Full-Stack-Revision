@@ -1,0 +1,31 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: tahoma;
+}
+
+div.main{
+    /* float: left; */
+    display: flex;
+    width: 700px;
+    border: 5px solid black;
+    margin: 25px auto;
+   
+}
+div.text{
+    width: 300px;
+    height: 300px;
+    border: 10px solid red;
+    margin: 25px;
+    /* overflow: scroll; */
+    overflow-y:hidden;
+}
+div.photo{
+    width: 300px;
+    height: 300px;
+    border: 10px solid red;
+    margin: 25px;
+    /* overflow: auto; */
+    overflow-x: hidden;
+}
