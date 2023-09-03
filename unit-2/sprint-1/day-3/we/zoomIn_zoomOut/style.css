@@ -1,0 +1,11 @@
+
+.image-container {
+    width: 50%; /* Adjust this width as needed */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#zoomed-image {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
