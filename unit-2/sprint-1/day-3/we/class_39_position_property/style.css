@@ -1,0 +1,24 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: tahoma;
+}
+
+div.box{
+  width: 600px;
+  height: 600px;
+  border: 5px solid red;
+  overflow: auto;
+ position: relative;
+ left: 50px;
+ top: 30px;
+ 
+
+}
+div.box img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 500px;
+    top: 500px;
+}
