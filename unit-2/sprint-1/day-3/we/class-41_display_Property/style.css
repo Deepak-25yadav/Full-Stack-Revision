@@ -1,0 +1,84 @@
+
+.head-1{
+    border: 1px solid red;
+    background-color: green;
+}
+.head-2{
+    border: 1px solid red;
+    background-color: green;
+}
+#para-1{
+    border: 2px solid rgb(25, 3, 112);
+    background-color: yellow;
+}
+.para-2{
+    border: 2px solid green;
+    background-color: crimson;
+}
+.para-3{
+    background-color: aquamarine;
+    border: 2px solid blue;
+}
+.para-4{
+    background-color: darkgrey;
+   border: 2px solid green;
+}
+.span-1{
+    border: 2px solid blue;
+    background-color: yellow;
+}
+.span-2{
+    border: 2px solid red;
+    background-color: darkkhaki;
+}
+.span-3{
+    border: 2px solid blue;
+    background-color: coral;
+}
+.span-4{
+    border: 2px solid red;
+    background-color: darkkhaki;
+}
+.span-5{
+    border: 2px solid blue;
+    background-color: coral;
+}
+p{
+    width: 20%;
+    margin: 0px 20px 20px 20px;
+    /* display: inline-block; */
+    padding: 30px;
+    height: 200px;
+    overflow-y: auto;
+   display: inline-block;
+}
+
+h1{
+    height: 200px;
+}
+h2{
+    padding: 20px;
+}
+
+
+
+span{
+    display:inline-block;
+    width: 40%;
+    
+    height: 120px;
+    overflow: auto;
+   /* padding: 50px; */
+    margin: 50px ;
+    
+}
+
+.para-1{ 
+/* display: none; */
+top: -10px;
+}
+
+ .element_none{
+    display: none;
+    /* top: 0px; */
+} 

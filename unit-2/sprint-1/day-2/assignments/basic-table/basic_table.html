@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Table</title>
+    <style>
+        body{
+            background-color: black;
+        }
+       
+        #container{
+            /* background-color: black;
+            border: 4px solid blue;
+            width: 100%;
+            height: 100%; */
+            border: 2px solid red; 
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           box-shadow: 100px 100px 100px rgba(red, green, blue, 0.5);
+            
+            
+            
+        }
+        #sub-container{
+            background-color: white;
+            border: 2px solid rgb(23, 195, 57);
+           width: 75%;
+           height: 65%;
+            
+        }
+        table{
+            /* padding: 5px; */
+            font-size: xx-large;
+            font-weight: bolder;
+            
+            margin: auto;
+            width: 100%;
+            height: 100%;
+           
+        }
+       th{
+        padding: 20px;
+        text-align: center;
+        font-weight: 1200px;
+        font-size: xx-large;
+       }
+       td{
+        /* padding: 10px; */
+        text-align: center;
+        font-size: x-large;
+       }
+    </style>
+</head>
+<body>
+   <div id="container">
+   <div id="sub-container">
+    <table border="2px" cellspacing="0">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Full Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Founder Microsoft</td>
+                <td>$ 1000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steve Jobs</td>
+                <td>Founder Apple</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>Founder Google</td>
+                <td>$1100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark Zuckerberg</td>
+                <td>Founder Facebook</td>
+                <td>$1300</td>
+            </tr>
+        </tbody>
+    </table>
+
+   </div>
+   </div>
+</body>
+</html>

@@ -1,5 +1,21 @@
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +24,81 @@
 <style>
   body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ecabc2;
     text-align: center;
     margin: 0;
     padding: 0;
   }
   #container {
-    background-color: #fff;
-    padding: 20px;
+    background-color: #a1e7f7;
+    padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 100px auto;
+  }
+  #temperature {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+</style>
+<title>Temperature Selector</title>
+</head>
+<body>
+<div id="container">
+  <h1>Temperature Selector</h1>
+  <p>Select your preferred temperature:</p>
+  <input type="range" id="temperatureSlider" color="red" min="0" max="100" step="1" value="25">
+  <p id="temperature">25°C</p>
+</div>
+
+<script>
+  const temperatureSlider = document.getElementById('temperatureSlider');
+  const temperatureDisplay = document.getElementById('temperature');
+
+  temperatureSlider.addEventListener('input', updateTemperature);
+
+  function updateTemperature() {
+    const selectedTemperature = temperatureSlider.value;
+    temperatureDisplay.textContent = `${selectedTemperature}°C`;
+
+    // Adding color indicator based on temperature ranges
+    if (selectedTemperature >= 0 && selectedTemperature <= 30) {
+      temperatureDisplay.style.color = 'green';
+      
+    } else if (selectedTemperature >= 31 && selectedTemperature <= 50) {
+      temperatureDisplay.style.color = 'yellow';
+    } else if (selectedTemperature >= 51 && selectedTemperature <= 100) {
+      temperatureDisplay.style.color = 'red';
+    }
+  }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ecabc2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  #container {
+    background-color: #a1e7f7;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     margin: 100px auto;
   }
@@ -48,4 +129,4 @@
   }
 </script>
 </body>
-</html>
+</html> -->
